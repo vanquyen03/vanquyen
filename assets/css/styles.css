@@ -180,13 +180,16 @@ img {
 
 /*===== HOME =====*/
 .home {
-  position: relative;
-  row-gap: 5rem;
-  padding: 4rem 0 5rem;
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: space-between; /* Tạo khoảng cách giữa 2 div */
+  gap: 20px; /* Khoảng cách giữa các phần tử */
 }
+
 .home__data {
-  align-self: center;
+  flex: 1; /* Chiếm phần còn lại của không gian */
 }
+
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
